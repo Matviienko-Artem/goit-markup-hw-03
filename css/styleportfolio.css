@@ -1,0 +1,145 @@
+:root {
+  --accent-color: #2196f3;
+  --dark-color: #212121;
+  --white-color: #ffffff;
+  --gray-color: #757575;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+/* Начало хедера */
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.logoword {
+  color: #000000;
+}
+
+.navigation {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  list-style-type: none;
+}
+
+.navigation-item {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+.navigation-item:hover {
+  color: var(--accent-color);
+}
+
+.navigation-item:focus {
+  color: var(--accent-color);
+}
+
+nav ~ a.navigation-item {
+  color: var(--gray-color);
+}
+
+/* Конец хедера */
+/* Начало основной части */
+
+.button {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: var(--white-color);
+  color: var(--dark-color);
+}
+
+.button:hover {
+  color: var(--white-color);
+  background: var(--accent-color);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.button-list,
+.client-list {
+  list-style-type: none;
+}
+
+.client {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+.client-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+
+.client-title-work {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--gray-color);
+}
+
+/* Конец основной части */
+/* Начало футера */
+
+footer {
+  background: #2f303a;
+}
+
+.logoword-white {
+  color: var(--white-color);
+}
+
+.address {
+  list-style-type: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
+.address-item {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.invite {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.invite-list {
+  list-style-type: none;
+}
+
+.invite-item {
+  text-decoration: none;
+}
+
+/* Конец футера */
