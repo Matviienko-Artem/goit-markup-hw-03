@@ -5,11 +5,29 @@
   --gray-color: #757575;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
+  font-weight: 500;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 500;
   color: var(--dark-color);
+}
+
+.container {
+  width: 1600px;
+  padding-left: 215px;
+  padding-right: 215px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 /* Начало хедера */
@@ -23,6 +41,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
+  padding-right: 85px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .logoword {
   color: #000000;
@@ -33,11 +54,25 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-navigation {
+  margin-right: auto;
+}
+
+.navigation-menu:not(:last-child) {
+  margin-right: 50px;
 }
 
 .navigation-item {
   text-decoration: none;
   color: var(--dark-color);
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .navigation-item:hover {
@@ -56,6 +91,10 @@ nav ~ a.navigation-item {
 /* Начало основной части */
 
 .hero {
+  width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   background: rgba(47, 48, 58, 0.8);
 }
 
@@ -68,6 +107,10 @@ h1 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  margin: 0em;
+  padding-left: 452px;
+  padding-right: 452px;
+  padding-top: 200px;
 }
 
 .button {
@@ -83,6 +126,12 @@ h1 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: var(--white-color);
+  width: 200px;
+  height: 50px;
+  padding: 10px 31px;
+  margin-left: 700px;
+  margin-right: 700px;
+  margin-top: 30px;
 }
 
 .button:hover {
@@ -91,6 +140,20 @@ h1 {
 
 .features {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  padding-top: 95px;
+}
+
+.features:not(:last-child) {
+  padding-right: 30px;
+}
+
+.features-img {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  padding: 25px 100px;
 }
 
 .features-title {
@@ -100,6 +163,7 @@ h1 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--dark-color);
+  padding-top: 30px;
 }
 
 .features-content {
@@ -108,6 +172,18 @@ h1 {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--gray-color);
+  padding-top: 10px;
+}
+
+.wht-doing {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-color);
+  margin-top: 85px;
+  margin-bottom: 0px;
 }
 
 h2 {
@@ -121,6 +197,18 @@ h2 {
 
 .working {
   list-style-type: none;
+  padding-left: 0px;
+  padding-top: 50px;
+  margin: 0;
+}
+
+.working:not(:last-child) {
+  padding-right: 30px;
+}
+
+.working-img {
+  width: 370px;
+  height: 294px;
 }
 
 .working-title {
@@ -132,6 +220,21 @@ h2 {
   text-transform: uppercase;
   color: var(--white-color);
   background: rgba(47, 48, 58, 0.8);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-cmnd {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-color);
+  margin-top: 185px;
+  margin-bottom: 0px;
 }
 
 .team-list,
@@ -139,8 +242,19 @@ h2 {
   list-style-type: none;
 }
 
-.social-item {
-  text-decoration: none;
+.team-list {
+  padding-left: 0;
+  padding-top: 50px;
+  margin: 0;
+}
+
+.team-list:not(:last-child) {
+  padding-right: 30px;
+}
+
+.team-img {
+  width: 270px;
+  height: 260px;
 }
 
 .employee {
@@ -150,6 +264,8 @@ h2 {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--dark-color);
+  padding-top: 30px;
+  padding-bottom: 0;
 }
 
 .profession {
@@ -159,10 +275,32 @@ h2 {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--gray-color);
+  padding-top: 10px;
+}
+
+.social-item {
+  text-decoration: none;
+}
+
+.our-client {
+  margin-top: 185px;
+  margin-bottom: 0px;
 }
 
 .client-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.client {
+  width: 170px;
+  height: 90px;
+  padding-top: 50px;
+}
+
+.client:not(:last-child) {
+  padding-right: 30px;
 }
 
 /* Конец основной части */
@@ -170,6 +308,24 @@ h2 {
 
 footer {
   background: #2f303a;
+  margin-top: 94px;
+}
+
+.footer-content {
+  justify-content: start;
+}
+
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  text-decoration: none;
+  padding-top: 60px;
+  margin: 0;
 }
 
 .logoword-white {
@@ -184,10 +340,26 @@ footer {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--white-color);
+  margin: 0;
+  padding-left: 0px;
+  padding-top: 20px;
+  padding-right: 70px;
+  padding-bottom: 60px;
 }
 
 .address-item {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.invite-list {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  padding-top: 20px;
+}
+
+.invite-item {
+  text-decoration: none;
 }
 
 .invite {
@@ -197,14 +369,12 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
+  margin: 0;
+  padding-top: 70px;
 }
 
-.invite-list {
-  list-style-type: none;
-}
-
-.invite-item {
-  text-decoration: none;
+.invite:not(:last-child) {
+  padding-right: 94px;
 }
 
 /* Конец футера */
