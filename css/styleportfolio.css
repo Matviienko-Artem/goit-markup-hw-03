@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+p {
+  margin: 0;
+}
+
 body {
   font-weight: 500;
   font-family: "Roboto", sans-serif;
@@ -41,9 +45,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
-  padding-right: 85px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  margin-right: 85px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .logoword {
   color: #000000;
@@ -72,7 +76,7 @@ body {
 }
 
 .navigation-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 .navigation-item:hover {
@@ -92,13 +96,13 @@ nav ~ a.navigation-item {
 
 .button-list {
   margin: 0;
-  padding-top: 95px;
+  margin-top: 95px;
   padding-left: 0;
   justify-content: center;
 }
 
 .button-item:not(:last-child) {
-  padding-right: 8px;
+  margin-right: 8px;
 }
 
 .button-list,
@@ -136,7 +140,7 @@ nav ~ a.navigation-item {
 }
 
 .client-item {
-  margin-top: 30px;
+  margin-top: 34px;
 }
 
 .client-item:not(:nth-child(3n)) {
@@ -154,8 +158,8 @@ nav ~ a.navigation-item {
   line-height: 36px;
   letter-spacing: 0.06em;
   margin: 0;
-  padding-top: 20px;
-  padding-left: 24px;
+  margin-top: 20px;
+  margin-left: 24px;
 }
 
 .client-title-work {
@@ -163,8 +167,7 @@ nav ~ a.navigation-item {
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--gray-color);
-  margin: 0;
-  padding-left: 24px;
+  margin-left: 24px;
 }
 
 /* Конец основной части */
@@ -177,6 +180,7 @@ footer {
 
 .footer-content {
   justify-content: start;
+  display: flex;
 }
 
 .logo-footer {
@@ -188,8 +192,8 @@ footer {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
-  padding-top: 60px;
   margin: 0;
+  margin-top: 60px;
 }
 
 .logoword-white {
@@ -206,20 +210,24 @@ footer {
   color: var(--white-color);
   margin: 0;
   padding-left: 0px;
-  padding-top: 20px;
-  padding-right: 70px;
-  padding-bottom: 60px;
+  margin-top: 20px;
+  margin-right: 70px;
+  margin-bottom: 60px;
 }
 
 .address-item {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .invite-list {
   list-style-type: none;
   margin: 0;
   padding-left: 0;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .invite-item {
@@ -234,11 +242,11 @@ footer {
   text-transform: uppercase;
   color: var(--white-color);
   margin: 0;
-  padding-top: 70px;
+  margin-top: 72px;
 }
 
 .invite:not(:last-child) {
-  padding-right: 94px;
+  margin-right: 94px;
 }
 
 /* Конец футера */

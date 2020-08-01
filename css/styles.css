@@ -22,6 +22,7 @@ body {
   padding-right: 215px;
   margin-left: auto;
   margin-right: auto;
+  /* background-color: tomato; */
 }
 
 .flexbox {
@@ -41,9 +42,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
-  padding-right: 85px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  margin-right: 85px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .logoword {
   color: #000000;
@@ -72,7 +73,7 @@ body {
 }
 
 .navigation-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 .navigation-item:hover {
@@ -96,6 +97,9 @@ nav ~ a.navigation-item {
   margin-left: auto;
   margin-right: auto;
   background: rgba(47, 48, 58, 0.8);
+  padding-left: 452px;
+  padding-right: 452px;
+  padding-top: 200px;
 }
 
 h1 {
@@ -108,9 +112,6 @@ h1 {
   text-transform: uppercase;
   color: var(--white-color);
   margin: 0em;
-  padding-left: 452px;
-  padding-right: 452px;
-  padding-top: 200px;
 }
 
 .button {
@@ -129,9 +130,9 @@ h1 {
   width: 200px;
   height: 50px;
   padding: 10px 31px;
-  margin-left: 700px;
-  margin-right: 700px;
   margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button:hover {
@@ -142,11 +143,11 @@ h1 {
   list-style-type: none;
   margin: 0;
   padding-left: 0;
-  padding-top: 95px;
+  margin-top: 95px;
 }
 
 .features:not(:last-child) {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 .features-img {
@@ -163,7 +164,7 @@ h1 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--dark-color);
-  padding-top: 30px;
+  margin-top: 30px;
 }
 
 .features-content {
@@ -172,7 +173,7 @@ h1 {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--gray-color);
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 .wht-doing {
@@ -198,12 +199,12 @@ h2 {
 .working {
   list-style-type: none;
   padding-left: 0px;
-  padding-top: 50px;
   margin: 0;
+  margin-top: 50px;
 }
 
 .working:not(:last-child) {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 .working-img {
@@ -244,12 +245,12 @@ h2 {
 
 .team-list {
   padding-left: 0;
-  padding-top: 50px;
   margin: 0;
+  margin-top: 50px;
 }
 
 .team-list:not(:last-child) {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 .team-img {
@@ -264,7 +265,7 @@ h2 {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--dark-color);
-  padding-top: 30px;
+  margin-top: 30px;
   padding-bottom: 0;
 }
 
@@ -275,7 +276,7 @@ h2 {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--gray-color);
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 .social-item {
@@ -294,13 +295,19 @@ h2 {
 }
 
 .client {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
   width: 170px;
   height: 90px;
-  padding-top: 50px;
+  margin-top: 50px;
+
+  padding-top: 22px;
+  text-align: center;
 }
 
 .client:not(:last-child) {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 /* Конец основной части */
@@ -313,6 +320,7 @@ footer {
 
 .footer-content {
   justify-content: start;
+  display: flex;
 }
 
 .logo-footer {
@@ -324,8 +332,8 @@ footer {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
-  padding-top: 60px;
   margin: 0;
+  margin-top: 60px;
 }
 
 .logoword-white {
@@ -342,20 +350,24 @@ footer {
   color: var(--white-color);
   margin: 0;
   padding-left: 0px;
-  padding-top: 20px;
-  padding-right: 70px;
-  padding-bottom: 60px;
+  margin-top: 20px;
+  margin-right: 70px;
+  margin-bottom: 60px;
 }
 
 .address-item {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .invite-list {
   list-style-type: none;
   margin: 0;
   padding-left: 0;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .invite-item {
@@ -370,11 +382,11 @@ footer {
   text-transform: uppercase;
   color: var(--white-color);
   margin: 0;
-  padding-top: 70px;
+  margin-top: 72px;
 }
 
 .invite:not(:last-child) {
-  padding-right: 94px;
+  margin-right: 94px;
 }
 
 /* Конец футера */
